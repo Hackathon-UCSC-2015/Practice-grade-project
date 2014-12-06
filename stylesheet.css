@@ -20,4 +20,13 @@ body {
 
 #header {
 	color:#00458C;
+	height:100px;
+	position:relative;
+	font-size:36px;
+}
+
+#header-content {
+	position: absolute;
+	bottom:0px;
+	left:0px;	
 }
