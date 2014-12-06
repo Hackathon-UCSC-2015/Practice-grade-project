@@ -4,6 +4,9 @@
 
 body {
 	background-color:#f7f6ef;
+	font-family:Tahoma, Geneva, sans-serif;
+	width:1000px;
+	margin: 0 auto;
 }
 
 #testOutputBox {   
@@ -13,4 +16,8 @@ body {
 
 #gradeCategories {
 	background-color:#E8E5CF;
+}
+
+#header {
+	color:#00458C;
 }
