@@ -31,3 +31,13 @@ body {
 	bottom:0px;
 	left:0px;	
 }
+
+.categoryTitle {
+	display: inline-block;
+}
+.removeCategory {
+	background-color:#0080BB;
+	display: inline-block;
+	padding: 5px;
+	border-radius: 10px;
+}
