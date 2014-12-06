@@ -1,5 +1,9 @@
+var socket = new WebSocket("ws://localhost/");
+
 function addCategory() {
-    $("#gradeCategories").html("test");
+    var newCategory = $("#categoryTemplate").clone();
+    newCategory.show();
+    $("#gradeCategories").append(newCategory);
 }
 
 $(document).ready(function() {
