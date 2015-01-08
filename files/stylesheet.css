@@ -59,6 +59,12 @@ body {
 	text-align:center;
 	vertical-align:central;
 	padding-top:5px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 #AddCategoryButton:hover {
 	color:#FF0;
@@ -75,4 +81,7 @@ body {
 	background-color:#f7f6ef;
 	border-radius:10px;
 	padding:10px;
+}
+#footer {
+	height:100px;
 }
