@@ -34,7 +34,7 @@
 					<h3 class="categoryTitle" contenteditable="true">Category</h3>
                     <button onClick="addGrade(this);">Add Grade</button>
                     <span>% of grade:</span>
-                    <input class="gradepercent" type="number"></input>
+                    <input class="gradepercent" type="number" max="100" min="0"></input>
 					<div class="remove">-</div>
 				</div>
                 <div id="assignmentTemplate" class="assignment" style="display:none">
@@ -45,6 +45,8 @@
                     <div class="remove">-</div>
                 </div>
             </div>
+            <h2>Final Grade:</h2>
+            <div id="finalgrade"></div>
         </div>
         <div id="footer"></div>
 	</body>
