@@ -3,8 +3,10 @@
 }
 
 body {
-	background-color:#f7f6ef;
-	background-image:url(images/cork-board.jpg);
+	background-color:#fefef4;
+	background-image:url(images/gradient.png);
+	background-repeat:repeat-y;
+	background-position:center;
 	font-family:Tahoma, Geneva, sans-serif;
 	width:1000px;
 	margin: 0 auto;
@@ -25,12 +27,14 @@ body {
 	height:100px;
 	position:relative;
 	font-size:36px;
+	margin:20px;
 }
 
 #header-content {
 	position: absolute;
 	bottom:0px;
-	left:0px;	
+	width:100%;
+	text-align:center;
 }
 
 .categoryTitle {
@@ -42,9 +46,13 @@ body {
 	padding: 5px;
 	border-radius: 10px;
 }
+#content {
+	margin:10px;
+}
 #bodyContent {
 	position:absolute;
 	top:50px;
 	width:1000px;
 	background-color:#f7f6ef;
+	border-radius:10px;
 }
