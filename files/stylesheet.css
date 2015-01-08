@@ -76,12 +76,10 @@ body {
 }
 #bodyContent {
 	position:absolute;
-	top:50px;
 	width:1000px;
 	background-color:#f7f6ef;
 	border-radius:10px;
 	padding:10px;
-}
-#footer {
-	height:100px;
+	margin-top:50px;
+	margin-bottom:50px;
 }
