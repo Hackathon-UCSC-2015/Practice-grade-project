@@ -35,7 +35,7 @@ body {
 .categoryTitle {
 	display: inline-block;
 }
-.removeCategory {
+.remove {
 	background-color:#0080BB;
 	display: inline-block;
 	padding: 5px;

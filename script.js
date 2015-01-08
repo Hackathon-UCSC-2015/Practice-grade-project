@@ -11,5 +11,5 @@ function addCategory() {
 }
 
 $(document).ready(function() {
-
+	
 });
