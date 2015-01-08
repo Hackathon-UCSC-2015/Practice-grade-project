@@ -31,6 +31,13 @@ function addGrade(button) {
     $(button).parent().append(assignment);
 }
 
+function recalculate() {
+    $("#gradeCategories").children().each(function(i){
+        var categorypercent = $(i).children(".gradepercent").val();
+        console.log($(i).html());
+    });
+}
+
 $(document).ready(function() {
     console.log("ready");
     
