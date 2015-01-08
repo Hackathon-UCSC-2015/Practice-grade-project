@@ -5,9 +5,13 @@ socket.onmessage = function(data) {
 }
 
 function addCategory() {
-    var newCategory = $("#categoryTemplate").clone();
-    newCategory.show();
-    $("#gradeCategories").append(newCategory);
+
+    for (i = 0; i < 100000
+        ; i++) {
+        var newCategory = $("#categoryTemplate").clone();
+        newCategory.show();
+        $("#gradeCategories").append(newCategory);
+    }
 }
 
 $(document).ready(function() {
