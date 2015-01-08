@@ -21,5 +21,5 @@ wss.on('connection', function(ws){
 	ws.on('message', function(message){
 		console.log("User "+numberconnected+" said: "+message);
 		ws.send("Thanks for sending a message!");
-	}
-}
+	});
+});
