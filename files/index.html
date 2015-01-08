@@ -19,8 +19,7 @@
                     <A HREF="http://www.google.com/">
                     <IMG SRC="http://www.google.com/logos/Logo_40wht.gif"
                     border="0" ALT="Google" align="absmiddle"></A>-->
-                    <INPUT TYPE=text name=q size=25 maxlength=255 value="">
-                    <INPUT type=submit name=btnG VALUE="Google Search">
+                    <INPUT TYPE=text name=q size=40 maxlength=255 value="" placeholder="Google Search">
                     </td></tr></TABLE>
                     </FORM>
                     </center>
@@ -28,7 +27,8 @@
                 </div>
             </div>
             <div id="testOutputBox">sample</div>
-            <button onClick="addCategory();">Add Category</button>
+            <div id="AddCategoryButton" onClick="addCategory()" alt="Add Category">Add Category</div>
+            <!--<button onClick="addCategory();">Add Category</button>-->
             <div id="gradeCategories">
                 <div id="categoryTemplate" class="category" style="display:none">
 					<h3 class="categoryTitle" contenteditable="true">Category</h3>
