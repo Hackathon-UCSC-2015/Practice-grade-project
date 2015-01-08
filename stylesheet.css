@@ -4,6 +4,7 @@
 
 body {
 	background-color:#f7f6ef;
+	background-image:url(images/cork-board.jpg);
 	font-family:Tahoma, Geneva, sans-serif;
 	width:1000px;
 	margin: 0 auto;
@@ -35,9 +36,15 @@ body {
 .categoryTitle {
 	display: inline-block;
 }
-.removeCategory {
+.remove {
 	background-color:#0080BB;
 	display: inline-block;
 	padding: 5px;
 	border-radius: 10px;
+}
+#bodyContent {
+	position:absolute;
+	top:50px;
+	width:1000px;
+	background-color:#f7f6ef;
 }
