@@ -3,8 +3,10 @@
 }
 
 body {
-	background-color:#f7f6ef;
-	background-image:url(images/cork-board.jpg);
+	background-color:#fefef4;
+	background-image:url(images/gradient.png);
+	background-repeat:repeat-y;
+	background-position:center;
 	font-family:Tahoma, Geneva, sans-serif;
 	width:1000px;
 	margin: 0 auto;
