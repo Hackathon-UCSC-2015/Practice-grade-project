@@ -10,6 +10,10 @@ function addCategory() {
     $("#gradeCategories").append(newCategory);
 }
 
+function addGrade(button) {
+    $(button).parent().append($("#assignmentTemplate").clone().show());
+}
+
 $(document).ready(function() {
 
 });

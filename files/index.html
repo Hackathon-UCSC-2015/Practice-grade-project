@@ -17,8 +17,13 @@
             <div id="gradeCategories">
                 <div id="categoryTemplate" class="category" style="display:none">
 					<h3 class="categoryTitle" contenteditable="true">Category</h3>
-					<div class="removeCategory">-</div>
+                    <button onClick="addGrade(this);">Add Grade</button>
+					<div class="remove">-</div>
 				</div>
+                <div id="assignmentTemplate" class="assignment" style="display:none">
+                    <span contenteditable="true">Assignment</span>
+                    <div class="remove">-</div>
+                </div>
             </div>
         </div>
         <div id="footer"></div>
