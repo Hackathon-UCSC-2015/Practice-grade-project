@@ -1,7 +1,7 @@
 var express = require('express');
 var app = express();
 app.use(express.static(__dirname+'/files'));
-app.listen(3000, function(){});
+app.listen(3000);
 
 var WebSocketServer = require('ws').Server;
 var wss = new WebSocketServer({port:8080});
