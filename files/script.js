@@ -7,18 +7,28 @@ socket.onmessage = function(data) {
 function addCategory() {
     var newCategory = $("#categoryTemplate").clone();
     newCategory.show();
+    newCategory.children('.gradepercent').on('input', function() {
+        console.log($(this).val());
+        if($(this).val()<0) {
+            $(this).val(0);
+        }
+        if($(this).val()>100) {
+            $(this).val(100);
+        }
+    });
     $("#gradeCategories").append(newCategory);
 }
 
 function addGrade(button) {
-    var assignment = $("#assignmentTemplate").clone().show();
+    var assignment = $("#assignmentTemplate").clone();
+    assignment.show();
     assignment.children('.pointsreceived').on('input', function() {
-        console.log("change");
-        if(isNaN($(this).val())) {
+        console.log($(this).val());
+        if($(this).val()<0) {
             $(this).val(0);
         }
     });
-    $(button).parent().append($("#assignmentTemplate").clone().show());
+    $(button).parent().append(assignment);
 }
 
 $(document).ready(function() {
