@@ -1,5 +1,5 @@
 .category {
-    
+    margin-left:10px;
 }
 
 body {
@@ -50,13 +50,36 @@ body {
 	margin:10px;
 }
 .assignment {
-	margin-left:10px;
+	margin-left:20px;
+}
+#AddCategoryButton {
+	background-image:url(images/add_category_up.png);
+	width:150px;
+	height:25px;
+	text-align:center;
+	vertical-align:central;
+	padding-top:5px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+#AddCategoryButton:hover {
+	color:#FF0;
+	background-image:url(images/add_category_over.gif)
+}
+#AddCategoryButton:active {
+	color:#FF0;
+	background-image:url(images/add_category_down.png)
 }
 #bodyContent {
 	position:absolute;
-	top:50px;
 	width:1000px;
 	background-color:#f7f6ef;
 	border-radius:10px;
 	padding:10px;
+	margin-top:50px;
+	margin-bottom:50px;
 }

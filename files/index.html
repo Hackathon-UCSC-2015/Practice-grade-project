@@ -2,6 +2,7 @@
     <head>
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
         <script src="script.js"></script>
+        <script src="remove.js"></script>
         <link rel="stylesheet" type="text/css" href="stylesheet.css">
         <title>Gradebook</title>
     </head>
@@ -19,8 +20,7 @@
                     <A HREF="http://www.google.com/">
                     <IMG SRC="http://www.google.com/logos/Logo_40wht.gif"
                     border="0" ALT="Google" align="absmiddle"></A>-->
-                    <INPUT TYPE=text name=q size=25 maxlength=255 value="">
-                    <INPUT type=submit name=btnG VALUE="Google Search">
+                    <INPUT TYPE=text name=q size=40 maxlength=255 value="" placeholder="Google Search">
                     </td></tr></TABLE>
                     </FORM>
                     </center>
@@ -28,23 +28,28 @@
                 </div>
             </div>
             <div id="testOutputBox">sample</div>
-            <button onClick="addCategory();">Add Category</button>
+            <div id="AddCategoryButton" onClick="addCategory()" alt="Add Category">Add Category</div>
+            <!--<button onClick="addCategory();">Add Category</button>-->
             <div id="gradeCategories">
-                <div id="categoryTemplate" class="category" style="display:none">
-					<h3 class="categoryTitle" contenteditable="true">Category</h3>
-                    <button onClick="addGrade(this);">Add Grade</button>
-                    <span>% of grade:</span>
-                    <input class="gradepercent" type="number"></input>
-					<div class="remove">-</div>
-				</div>
-                <div id="assignmentTemplate" class="assignment" style="display:none">
-                    <span contenteditable="true">Assignment</span>
-                    <span>Points:</span>
-                    <input class="pointsreceived" type="number"></input> / 
-                    <input class="pointtotal" type="number"></input>
-                    <div class="remove">-</div>
-                </div>
+                
             </div>
+            <div id="categoryTemplate" class="category" style="display:none">
+				<h3 class="categoryTitle" contenteditable="true">Category</h3>
+                <button onClick="addGrade(this);">Add Grade</button>
+                <span>% of grade:</span>
+                <input class="gradepercent" type="number" max="100" min="0">0</input>
+                <div class="remove">-</div>
+            </div>
+            <div id="assignmentTemplate" class="assignment" style="display:none">
+                <span contenteditable="true">Assignment</span>
+                <span>Points:</span>
+                <input class="pointsreceived" type="number"></input> / 
+                <input class="pointtotal" type="number"></input>
+                <div class="remove">-</div>
+            </div>
+            <h2>Final Grade:</h2>
+            <div id="finalgrade"></div>
+            <button onclick="recalculate();">Recalculate</button>
         </div>
         <div id="footer"></div>
 	</body>
